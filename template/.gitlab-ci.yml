@@ -1,0 +1,9 @@
+stages:
+- deploy
+deploy:
+  stage: deploy
+  script:
+    - export LC_CTYPE=en_US.UTF-8
+    - sh deploy.sh $CI_BUILD_REF_NAME
+  tags:
+    - ac

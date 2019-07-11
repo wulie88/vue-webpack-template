@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
     <title>{{ name }}</title>
     <script>
       // 需要修改项目名称（英文）
@@ -36,5 +38,12 @@
 
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    
+    <script>
+      if (!location.host.match(/\.com$/)) {
+        document.write('<script src="//d.fenfenriji.com/web/static/ssyp/vconsole.3.3.0.min.js"><\/script>')
+        document.write('<script>new VConsole()<\/script>')
+      }
+    </script>
   </body>
 </html>
