@@ -7,6 +7,7 @@ import './utils/rem'
 import Vue from 'vue'
 import App from './App'
 import AppMixin from './AppMixin'
+Vue.mixin(AppMixin)
 {{#router}}
 import router from './router'
 {{/router}}
